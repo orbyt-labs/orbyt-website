@@ -1,21 +1,15 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import { Web3ContextProvider } from '../context'
-import { HyphenProvider } from "../store";
+import { ChakraProvider } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
-    <Web3ContextProvider>
-      <>
-      <Component {...pageProps} />
-      <ToastContainer
-          hideProgressBar
-          position="bottom-right"
-          autoClose={2000} />
-      </>
-    </Web3ContextProvider>
+    <ChakraProvider>
+      <Web3ContextProvider>
+        <Component {...pageProps} />
+      </Web3ContextProvider>
+    </ChakraProvider>
   ) 
 }
 
