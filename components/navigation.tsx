@@ -1,16 +1,32 @@
-import React from 'react';
+import { Box, Image } from '@chakra-ui/react';
 import { Web3Button } from './web3button';
+import Logo from './../assets/logo.png'
 
 export const Navigation = () => {
-  return(
-      <nav className="header">
-        <div 
-          className='p-2'>
-          <h1>cross chain</h1>
-        </div>
-        <div  className='p-2'>
+  return (
+      <Box
+        display='flex'
+        flexDirection='row'
+        height='80px'
+        padding='20px'
+        position='fixed'
+        cursor='pointer'
+        background='black'
+        width='100vw'
+        top='0%'
+        alignItems='center'
+        justifyContent='space-between'>
+        <Box
+          display='flex'
+          flexDirection='row'
+          alignItems='center'
+          justifyContent='space-between'>
+        </Box>
+        <Box>
           <Web3Button />
-        </div>
-      </nav>
+        </Box>
+      </Box>
   );
-};
+}
+
+export default Navigation;

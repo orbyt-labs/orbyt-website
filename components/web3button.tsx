@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@chakra-ui/react'
 import { useWeb3Context } from '../context'
 
 interface ConnectProps {
@@ -7,9 +8,9 @@ interface ConnectProps {
 
 const ConnectButton = ({ connect }: ConnectProps) => {
   return connect ? (
-    <button onClick={connect}>Connect</button>
+    <Button onClick={connect}>Connect Wallet</Button>
   ) : (
-    <button>Loading...</button>
+    <Button>Loading...</Button>
   )
 }
 
@@ -19,9 +20,9 @@ interface DisconnectProps {
 
 const DisconnectButton = ({ disconnect }: DisconnectProps) => {
   return disconnect ? (
-    <button onClick={disconnect}>Disconnect</button>
+    <Button onClick={disconnect}>Disconnect Wallet</Button>
   ) : (
-    <button>Loading...</button>
+    <Button>Loading...</Button>
   )
 }
 

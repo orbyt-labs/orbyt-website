@@ -1,16 +1,18 @@
-import React from 'react'
-import type { NextPage } from 'next'
-import { Navigation, SwapUI } from '../components'
+import React from 'react';
+import type { NextPage } from 'next';
+import { Phone, Main, Footer, Info } from '../components';
+import { Box } from '@chakra-ui/react';
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Navigation />
-      <div className="container">
-        <SwapUI />
-      </div>
-    </>
+    <Box
+      maxW='100vw'
+      overflow={'hidden'}  
+        cursor='pointer'>
+        <Main />
+        <Footer />
+    </Box>
   );
 };
 
-export default Home
+export default Home;
