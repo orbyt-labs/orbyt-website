@@ -1,4 +1,6 @@
 import { Box, Button} from '@chakra-ui/react';
+import GooglePlay from '../public/play-store.svg'
+import Image from 'next/image';
 
 export const appIcons = () => {
     return(
@@ -6,9 +8,11 @@ export const appIcons = () => {
             padding={4}
             maxW='500px'
             display='flex'
+            cursor={'pointer'}
             justifyContent='flex-start'>
                 {/*<Button margin={5}>Download IOS</Button>*/}
-                <Button>Download Android</Button>
+                <Image 
+                    src={GooglePlay}/>
         </Box>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Phone, Main, Footer, Info } from '../components';
+import { Main, Footer,Explainer } from '../components';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head'
 
@@ -16,6 +16,13 @@ const Home: NextPage = () => {
       overflow={'hidden'}  
         cursor='pointer'>
         <Main />
+        <Explainer />
+        <Box 
+          background='black'
+          minH='40px'/>
+        <Box
+          minH='100px'
+          className='gradient'/>
         <Footer />
       </Box>
     </>
