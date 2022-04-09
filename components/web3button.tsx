@@ -8,7 +8,9 @@ interface ConnectProps {
 
 const ConnectButton = ({ connect }: ConnectProps) => {
   return connect ? (
-    <Button onClick={connect}>Connect Wallet</Button>
+    <Button 
+      className={"gradient-button"}
+      onClick={connect}>Connect Wallet</Button>
   ) : (
     <Button>Loading...</Button>
   )
@@ -20,7 +22,9 @@ interface DisconnectProps {
 
 const DisconnectButton = ({ disconnect }: DisconnectProps) => {
   return disconnect ? (
-    <Button onClick={disconnect}>Disconnect Wallet</Button>
+    <Button
+      className={"gradient-button"} 
+      onClick={disconnect}>Disconnect Wallet</Button>
   ) : (
     <Button>Loading...</Button>
   )

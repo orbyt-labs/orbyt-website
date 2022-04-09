@@ -18,6 +18,7 @@ export const Phone = () => {
             background='black'
             max-height='650px'
             padding='10px'
+            margin={10}
             marginBottom='50px'
             border='2px solid white'
             cursor='pointer'

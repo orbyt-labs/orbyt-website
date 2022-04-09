@@ -1,6 +1,8 @@
-import { Box, Image } from '@chakra-ui/react';
+import { Box, Text} from '@chakra-ui/react';
 import { Web3Button } from './web3button';
-import Logo from './../assets/logo.png'
+import Logo from '../public/logo.png';
+import Image from 'next/image';
+
 
 export const Navigation = () => {
   return (
@@ -14,6 +16,7 @@ export const Navigation = () => {
         background='black'
         width='100vw'
         top='0%'
+        zIndex={999999}
         alignItems='center'
         justifyContent='space-between'>
         <Box
@@ -21,6 +24,13 @@ export const Navigation = () => {
           flexDirection='row'
           alignItems='center'
           justifyContent='space-between'>
+          <Image 
+            src={Logo}
+            width={30}
+            height={30}/>
+          <Text 
+            marginLeft={5}
+            fontWeight='bold'>ORBYT</Text>
         </Box>
         <Box>
           <Web3Button />
