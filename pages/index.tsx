@@ -12,17 +12,11 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Box
-      maxW='100vw'
-      overflow={'hidden'}  
+        maxW={['100vw', '100vw', '100vw']}
+        overflow={['100vw', '100vw', '100vw']}
         cursor='pointer'>
         <Main />
         <Explainer />
-        <Box 
-          background='black'
-          minH='40px'/>
-        <Box
-          minH='100px'
-          className='gradient'/>
         <Footer />
       </Box>
     </>

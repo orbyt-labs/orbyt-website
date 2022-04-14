@@ -9,12 +9,12 @@ export const Main = () => {
         paddingTop={40}
         background='black'
         display='flex'
-        alignItems='flex-start'
-        flexDirection='row'
+        flexDirection={['column', 'column', 'column', 'row']}
         maxW='100vw'
-        flexWrap='wrap'
+        flexWrap={['nowrap', 'nowrap', 'nowrap', 'wrap']}
         overflowX='hidden'
-        justifyContent='center'>
+        alignItems={['center', 'center', 'center', 'flex-start']}
+        justifyContent={['center', 'center', 'center', 'space-evenly']}>
         <Phone />
         <Box>
           <Heading
@@ -28,6 +28,7 @@ export const Main = () => {
               marginTop={'30px'}
               marginBottom={'30px'}
               maxWidth={"700px"}
+              color='white'
               fontWeight='bold'>
                 Keep your crypto in a secure and accessible wallet. We want to make it easier for users to connect to web3, make it easier for users to off-ramp from crypto, and have the best non-custodial app in Africa!
           </Text>
