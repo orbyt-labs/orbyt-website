@@ -14,7 +14,7 @@ export const Footer = () => {
         background='gray'
         padding={5}
         display='flex'
-        flexDirection='row'
+        flexDirection={['column','column', 'column','row']}
         min-height='100px'
         flexWrap='wrap'
         justifyContent='space-evenly'

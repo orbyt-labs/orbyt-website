@@ -25,9 +25,9 @@ export const Explainer = () => {
           margin={5}
           maxWidth={'400px'}
           minWidth={'400px'}>
-          <Heading>Open Source</Heading>
+          <Heading>Cheap Transactions</Heading>
           <Text
-            fontWeight='bold'>We don't own or store your private keys. you don't require any KYC to use the app.</Text>
+            fontWeight='bold'>Near-zero fees: transfer digital currencies around the world at a click of a button</Text>
         </Box>
         <Box
           className='glass'

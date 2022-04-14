@@ -30,9 +30,11 @@ export const Navigation = () => {
             height={30}/>
           <Text 
             marginLeft={5}
+            color='white'
             fontWeight='bold'>ORBYT</Text>
         </Box>
-        <Box>
+        <Box
+          display={'none'}>
           <Web3Button />
         </Box>
       </Box>
