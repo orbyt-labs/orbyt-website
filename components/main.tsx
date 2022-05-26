@@ -13,6 +13,7 @@ export const Main = () => {
         maxW='100vw'
         flexWrap={['nowrap', 'nowrap', 'nowrap', 'wrap']}
         overflowX='hidden'
+        minH={'100vh'}
         alignItems={['center', 'center', 'center', 'flex-start']}
         justifyContent={['center', 'center', 'center', 'space-evenly']}>
         <Phone />
