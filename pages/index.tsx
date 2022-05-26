@@ -16,8 +16,6 @@ const Home: NextPage = () => {
         overflow={['100vw', '100vw', '100vw']}
         cursor='pointer'>
         <Main />
-        <Explainer />
-        <Footer />
       </Box>
     </>
   );
