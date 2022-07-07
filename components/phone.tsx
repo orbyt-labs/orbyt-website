@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Text, Heading } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
+
 const variants = {
     hidden: { opacity: 0, scale: 0 },
     visible: {opacity: 1, scale: 1 }
@@ -10,13 +11,13 @@ const variants = {
 export const Phone = () => {
     const [token, setToken] = React.useState<any>([
         {
-            name: "Ethereum", price:  0.1 
+            name: "Ethereum", amount:  0.1 
         }, 
         {
-            name: "Matic", price:  2.6
+            name: "Matic", amount:  2.6
         }, 
         {
-            name: "USDC", price:  5.7
+            name: "USDC", amount:  5.7
         }
     ])
     const [total, setTotal] = React.useState<any>("R 3706.60") 
@@ -24,8 +25,8 @@ export const Phone = () => {
     const calculateTotal = () => {
     }
 
-    const getTotal = () => {
-        const totalAmount = 0.3
+    const getTotal = (amount: number) => {
+        const totalAmount = 100 * amount;
         return totalAmount;
     }
     
@@ -124,9 +125,8 @@ export const Phone = () => {
                             initial={'hidden'}
                             animate='visible'
                             variants={variants}
-                            whileHover={{scale: 1.5}}>
+                            whileHover={{scale: 1.1}}>
                             <Box
-                                background='#0E3665'
                                 padding='10px'
                                 marginTop='20px'
                                 display='flex'
@@ -135,8 +135,8 @@ export const Phone = () => {
                                 justifyContent='flex-start'
                                 borderRadius='15px'>
                                 <Box
-                                    width='25px'
-                                    height='25px'
+                                    width='45px'
+                                    height='45px'
                                     borderRadius='50%'
                                     background='#0DFFAC'>
                                 </Box>
@@ -145,7 +145,7 @@ export const Phone = () => {
                                     <Heading
                                         as='h3'
                                         color='#0DFFAC'>
-                                        {`R ${getTotal()}`}
+                                        {`R ${getTotal(Math.floor(item.amount))}`}
                                     </Heading>
                                     <Text
                                         color='#A6A6A6'>
