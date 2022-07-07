@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { Web3ContextProvider } from '../context'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Navigation } from '../components/navigation'
+import { Footer } from '../components'
 import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <>
           <Navigation />
           <Component {...pageProps} />
+          <Footer />
         </>
       </Web3ContextProvider>
     </ChakraProvider>

@@ -6,8 +6,9 @@ export const Main = () => {
   return (
       <Box
         padding={10}
+        zIndex={0 }
         paddingTop={40}
-        background='black'
+        background='black'  
         display='flex'
         flexDirection={['column', 'column', 'column', 'row']}
         maxW='100vw'
@@ -17,14 +18,14 @@ export const Main = () => {
         alignItems={['center', 'center', 'center', 'flex-start']}
         justifyContent={['center', 'center', 'center', 'space-evenly']}>
         <Phone />
-        <Box>
+        {/*<Box>
           <Heading
             className='gradient-text'
             maxWidth='800px'
             fontSize={'60px'}>
               A simple digital wallet to send, recieve and store digital assets.
           </Heading>
-          <AppIcon />
+          <AppIcon /> 
           <Text
               marginTop={'30px'}
               marginBottom={'30px'}
@@ -35,7 +36,7 @@ export const Main = () => {
           </Text>
         </Box> 
         <Box>
-        </Box>
+        </Box>*/}
       </Box>
   )
 };

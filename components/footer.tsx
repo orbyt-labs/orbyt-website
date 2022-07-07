@@ -1,17 +1,11 @@
-import { Box, Text, Heading } from '@chakra-ui/react';
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
-import { appIcons as AppIcon } from './appIcon';
+import { Box, Text } from '@chakra-ui/react';
 
 export const Footer = () => {
-    const goTo = (link: string) => {
-        window.open(link);
-    }
-
     return (
       <Box
         maxWidth='100vw'
         minWidth='100vw'
-        background='gray'
+        background='black'
         padding={5}
         display='flex'
         flexDirection={['column','column', 'column','row']}
@@ -19,46 +13,27 @@ export const Footer = () => {
         flexWrap='wrap'
         justifyContent='space-evenly'
         alignItems='center'>
-            <Box   
-                margin={5}
-                display='flex'
-                flexDirection='column'
-                justifyContent='center'>
-                <Text
-                    color='white'>
-                    made with ❤️ from Africa
-                </Text>
-                <AppIcon />
-            </Box>
             <Box
                 display='flex'
-                flex-direction='row'>
+                flexDirection='column'
+                alignItems='center'>
                 <Box
-                    cursor="pointer"
-                    padding={2}
-                    onClick={() => {
-                        goTo("https://twitter.com")
-                    }}>
-                    <FaTwitter
-                        size={35} />
-                </Box>    
-                <Box
-                    cursor="pointer"
-                    padding={2}
-                    onClick={() => {
-                        goTo("https://discord.gg/H49fTDDX")
-                    }}>
-                    <FaDiscord
-                        size={35} />
+                    display={['none', 'none', 'flex', 'flex']}
+                    width={['0%', '0%', '100%', '60%',]}>
+                    <Text
+                        size='sm'
+                        color='gray'>
+                            This web page and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. You understand that the crypto market is characterised by high volatility, and you should be aware of the concrete possibility of losing the entirety of the funds you allocated in the crypto market. You should refrain from using funds you can't afford to lose when purchasing cryptocurrencies and other digital tokens.
+                    </Text>
                 </Box>
                 <Box
-                    cursor="pointer"
                     padding={2}
-                    onClick={() => {
-                        goTo("https://github.com/orbytDAO")
-                    }}>
-                    <FaGithub
-                        size={35} />
+                    marginTop={5}>
+                    <Text
+                        size='sm'
+                        color='white'>
+                        © 2022 Orbyt Labs PTY LTD. All rights reserved.
+                    </Text> 
                 </Box>
             </Box>
       </Box>

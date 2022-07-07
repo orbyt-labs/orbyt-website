@@ -1,10 +1,14 @@
 import { Box, Text} from '@chakra-ui/react';
 import { Web3Button } from './web3button';
-import Logo from '../public/logo.png';
+import Logo from '../public/assets/images/logo.png';
 import Image from 'next/image';
-
+import { FaDiscord, FaGithub } from 'react-icons/fa';
 
 export const Navigation = () => {
+  const goTo = (link: string) => {
+    window.open(link, '_blank');
+  }
+
   return (
       <Box
         display='flex'
@@ -25,6 +29,7 @@ export const Navigation = () => {
           alignItems='center'
           justifyContent='space-between'>
           <Image 
+            alt={'orbtyt labs logo'}
             src={Logo}
             width={30}
             height={30}/>
@@ -34,8 +39,28 @@ export const Navigation = () => {
             fontWeight='bold'>ORBYT</Text>
         </Box>
         <Box
-          display={'none'}>
-          <Web3Button />
+          display={['none', 'none', 'flex', 'flexs']}
+          flexDirection='row'
+          justifyContent='center'
+          alignItems='center'>
+            <Box
+              margin={4}
+              onClick={() => goTo("https://discord.gg/7xz8JUg66P")}>
+              <FaDiscord
+                fontSize={35}
+                color='white' />
+            </Box>
+            <Box
+              margin={4}
+              onClick={() => goTo("https://github.com/orbyt-labs")} >
+              <FaGithub
+                fontSize={35}
+                color='white' />
+            </Box>
+            <Box
+              display='none'>
+              <Web3Button/>
+            </Box>
         </Box>
       </Box>
   );
