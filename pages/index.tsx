@@ -9,14 +9,11 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Home</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name='description' content='crypto wallet' />
+        <meta name='description' content='android crypto wallet' />
+        <meta name='description' content='ios crypto wallet' />
       </Head>
-      <Box
-        maxW={['100vw', '100vw', '100vw']}
-        overflow={['100vw', '100vw', '100vw']}
-        cursor='pointer'>
-        <Main />
-      </Box>
+      <Main />
     </>
   );
 };
