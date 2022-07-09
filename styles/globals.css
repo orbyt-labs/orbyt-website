@@ -4,6 +4,7 @@
 }
 
 html, body{
+  background: black;
   font: "SF-Pro=Rounded-Heavy";
   -webkit-user-select: none;  
   -moz-user-select: none;    

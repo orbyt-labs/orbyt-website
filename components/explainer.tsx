@@ -1,6 +1,6 @@
 import { Box, Text, Heading } from '@chakra-ui/react';
 
-export const Explainer = () => {
+export const Explainer = (): JSX.Element => {
   return (
       <Box
         className='gradient'

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Main, Footer,Explainer } from '../components';
+import { Main } from '../components';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head'
 
@@ -14,6 +14,11 @@ const Home: NextPage = () => {
         <meta name='description' content='ios crypto wallet' />
       </Head>
       <Main />
+      <Box
+        width='100vw'
+        minHeight='10px'
+        background={'black'}>
+      </Box>
     </>
   );
 };

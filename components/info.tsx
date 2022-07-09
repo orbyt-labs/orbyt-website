@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 
-export const Info = () => {
+export const Info = (): JSX.Element => {
   return (
     <Box
         padding={10}

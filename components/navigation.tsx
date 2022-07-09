@@ -4,7 +4,7 @@ import Logo from '../public/assets/images/logo.png';
 import Image from 'next/image';
 import { FaDiscord, FaGithub } from 'react-icons/fa';
 
-export const Navigation = () => {
+export const Navigation = (): JSX.Element => {
   const goTo = (link: string) => {
     window.open(link, '_blank');
   }

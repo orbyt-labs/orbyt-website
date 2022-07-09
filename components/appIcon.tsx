@@ -2,7 +2,7 @@ import { Box, Button} from '@chakra-ui/react';
 import GooglePlay from '../public/assets/images/google-play-light.svg'
 import Image from 'next/image';
 
-export const appIcons = () => {
+export const appIcons = (): JSX.Element => {
     return(
         <Box
             padding={4}
