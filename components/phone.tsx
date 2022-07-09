@@ -8,8 +8,8 @@ const variants = {
     visible: {opacity: 1, scale: 1 }
 }
 
-export const Phone = () => {
-    const [token, setToken] = React.useState<any>([
+export const Phone = (): JSX.Element => {
+    const [ token ] = React.useState<any>([
         {
             name: "Ethereum", amount:  0.1 
         }, 
@@ -20,10 +20,7 @@ export const Phone = () => {
             name: "USDC", amount:  5.7
         }
     ])
-    const [total, setTotal] = React.useState<any>("R 3706.60") 
-
-    const calculateTotal = () => {
-    }
+    const [total] = React.useState<any>("R 3706.60") 
 
     const getTotal = (amount: number) => {
         const totalAmount = 100 * amount;
@@ -43,9 +40,7 @@ export const Phone = () => {
             background='white'
             max-height='650px'
             padding='10px'
-            margin={10}
             overflowY={'hidden'}
-            marginBottom='50px'
             border='2px solid white'
             cursor='pointer'
             borderRadius='15px'>    
@@ -122,6 +117,7 @@ export const Phone = () => {
                 token.map((item: any) => {
                     return(
                         <motion.div
+                            key={item.name}
                             initial={'hidden'}
                             animate='visible'
                             variants={variants}

@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
     return (
       <Box
         maxWidth='100vw'

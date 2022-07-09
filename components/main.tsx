@@ -2,7 +2,7 @@ import { Box, Heading, Text } from '@chakra-ui/react';
 import { appIcons as AppIcon } from './appIcon';
 import { Phone } from './phone';
 
-export const Main = () => {
+export const Main = (): JSX.Element => {
   return (
       <Box
         padding={10}
@@ -14,7 +14,6 @@ export const Main = () => {
         maxW='100vw'
         flexWrap={['nowrap', 'nowrap', 'nowrap', 'wrap']}
         overflowX='hidden'
-        minH={'100vh'}
         alignItems={['center', 'center', 'center', 'flex-start']}
         justifyContent={['center', 'center', 'center', 'space-evenly']}>
         <Phone />
