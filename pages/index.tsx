@@ -1,7 +1,7 @@
 import React from "react";
 import type { NextPage } from "next";
 import { Main } from "../components";
-import { Container } from "@chakra-ui/react";
+import { Container, Box } from "@chakra-ui/react";
 import Head from "next/head";
 
 const Home: NextPage = () => {
@@ -15,11 +15,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Main />
-      <Box
-        width='100vw'
-        minHeight='10px'
-        background={'black'}>
-      </Box>
+      <Box width="100vw" minHeight="10px" background={"black"}></Box>
     </>
   );
 };

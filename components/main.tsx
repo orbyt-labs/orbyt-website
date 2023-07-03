@@ -17,21 +17,6 @@ export const Main = (): JSX.Element => {
       justifyContent={["center", "center", "center", "center"]}
     >
       <Box
-<<<<<<< HEAD
-        padding={10}
-        zIndex={0 }
-        paddingTop={40}
-        background='black'  
-        display='flex'
-        flexDirection={['column', 'column', 'column', 'row']}
-        maxW='100vw'
-        flexWrap={['nowrap', 'nowrap', 'nowrap', 'wrap']}
-        overflowX='hidden'
-        alignItems={['center', 'center', 'center', 'flex-start']}
-        justifyContent={['center', 'center', 'center', 'space-evenly']}>
-        <Phone />
-        {/*<Box>
-=======
         display="flex"
         justifyContent="space-between"
         margin="0px auto"
@@ -50,7 +35,6 @@ export const Main = (): JSX.Element => {
           cursor="pointer"
           justifyContent={["flex-start", "center", "center", "center"]}
         >
->>>>>>> 7489dacb1d93b0a25f293cbfdc92759120986387
           <Heading
             className="gradient-text"
             maxWidth="800px"
