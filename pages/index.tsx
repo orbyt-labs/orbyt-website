@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { Main } from "../components";
 import { Container, Box } from "@chakra-ui/react";
 import Head from "next/head";
+import { appIcons as AppIcon } from "../components/appIcon";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,9 @@ const Home: NextPage = () => {
         />
       </Head>
       <Main />
-      <Box width="100vw" minHeight="10px" background={"black"}></Box>
+      <Box width="100vw" minHeight="10px" background={"white"}>
+        <AppIcon />
+      </Box>
     </>
   );
 };

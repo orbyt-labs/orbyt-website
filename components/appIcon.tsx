@@ -11,16 +11,16 @@ export const appIcons = (): JSX.Element => {
   return (
     <Box
       padding={5}
-      width="100vw"
       display="flex"
       flexWrap="wrap"
       justifyContent={"space-evenly"}
-      background="white"
       cursor={"pointer"}
     >
       <Box
         onClick={() =>
-          goTo("https://play.google.com/store/apps/details?id=seni.tembe.orbyt")
+          goTo(
+            "https://play.google.com/store/apps/details?id=mindsgn.studio.orbyt"
+          )
         }
       >
         <Image alt="google play button" src={GooglePlay} />

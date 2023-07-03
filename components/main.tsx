@@ -1,5 +1,6 @@
 import { Box, Heading, Button, Text } from "@chakra-ui/react";
 import { Phone } from "./phone";
+import { appIcons as AppIcon } from "./appIcon";
 
 export const Main = (): JSX.Element => {
   return (
