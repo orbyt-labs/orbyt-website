@@ -1,13 +1,27 @@
 @font-face {
-  font-family: "SF-Pro=Rounded-Heavy";
-  src: url("/public/assets/fonts/SF-Pro-Rounded-Heavy.otf");
+  font-family: "SF-PRO-ROUNDED-HEAVY";
+  src: url("/assets/fonts/SF-Pro-Rounded-Heavy.otf");
+}
+
+@font-face {
+  font-family: "SF-MEDIUM";
+  src: url("/assets/fonts/SF-Mono-Medium.otf");
 }
 
 html, body{
   background: black;
-  font: "SF-Pro=Rounded-Heavy";
+  font-family: "SFPRO";
   -webkit-user-select: none;  
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
+}
+
+.gradient-text{
+  background-image: linear-gradient(225deg, #28d8ff, #032eff);
+  filter: drop-shadow(0 20px 30px #28d8ff33);
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
 }
