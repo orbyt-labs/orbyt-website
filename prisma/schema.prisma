@@ -1,0 +1,60 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model comment {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  emoji String @default("")
+  message String @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model show {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  start DateTime @default(now())
+  end DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model one {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model two {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model three {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model four {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model five {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @default("")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime @updatedAt
+}

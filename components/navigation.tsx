@@ -1,10 +1,11 @@
-import { Box, Text} from '@chakra-ui/react';
-import { Web3Button } from './web3button';
+import { Box, Heading} from '@chakra-ui/react';
 import Logo from '../public/assets/images/logo.png';
 import Image from 'next/image';
 import { FaDiscord, FaGithub } from 'react-icons/fa';
+import Router from 'next/router';
 
-export const Navigation = () => {
+export const Navigation = (): JSX.Element => {
+  const router = Router;
   const goTo = (link: string) => {
     window.open(link, '_blank');
   }
@@ -33,10 +34,11 @@ export const Navigation = () => {
             src={Logo}
             width={30}
             height={30}/>
-          <Text 
-            marginLeft={5}
-            color='white'
-            fontWeight='bold'>ORBYT</Text>
+          <Box
+            display={['none', 'none', 'flex', 'flex']}
+            flexDirection='row'
+            >
+          </Box>
         </Box>
         <Box
           display={['none', 'none', 'flex', 'flexs']}
@@ -59,7 +61,6 @@ export const Navigation = () => {
             </Box>
             <Box
               display='none'>
-              <Web3Button/>
             </Box>
         </Box>
       </Box>

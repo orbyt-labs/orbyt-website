@@ -1,42 +1,60 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import { appIcons as AppIcon } from './appIcon';
 import { Phone } from './phone';
 
-export const Main = () => {
+export const Main = (): JSX.Element => {
   return (
       <Box
-        padding={10}
-        zIndex={0 }
-        paddingTop={40}
-        background='black'  
+        zIndex={0}
+        paddingTop={20}
+        background='black'
         display='flex'
         flexDirection={['column', 'column', 'column', 'row']}
-        maxW='100vw'
+        width='100vw'
         flexWrap={['nowrap', 'nowrap', 'nowrap', 'wrap']}
         overflowX='hidden'
-        minH={'100vh'}
-        alignItems={['center', 'center', 'center', 'flex-start']}
-        justifyContent={['center', 'center', 'center', 'space-evenly']}>
-        <Phone />
-        {/*<Box>
-          <Heading
-            className='gradient-text'
-            maxWidth='800px'
-            fontSize={'60px'}>
-              A simple digital wallet to send, recieve and store digital assets.
-          </Heading>
-          <AppIcon /> 
-          <Text
-              marginTop={'30px'}
-              marginBottom={'30px'}
-              maxWidth={"700px"}
-              color='white'
-              fontWeight='bold'>
-                Keep your crypto in a secure and accessible wallet. We want to make it easier for users to connect to web3, make it easier for users to off-ramp from crypto, and have the best non-custodial app in Africa!
-          </Text>
-        </Box> 
-        <Box>
-        </Box>*/}
+        height={['40vh', '40vh', '60vh', '90vh']}
+        alignItems={['center', 'center', 'center', 'center']}
+        justifyContent={['center', 'center', 'center', 'center']}>
+        <Box
+          display='flex'
+          justifyContent='space-between'
+          margin='0px auto'
+          minW={['90%', '90%', '90%', '50%']}>
+          <Box
+            display={['none', 'none', 'none', 'flex']}
+            minHeight={['150px', '100px', '100px', '100px']}
+            width={['100%', '100%', '100%', '200px']}/>
+          <Box
+            width={['100%', '100%', '100%', '50%']}
+            display='flex'
+            flexDirection='column'
+            alignItems={['flex-end', 'flex-end', 'flex-end', 'flex-end']}
+            cursor='pointer'
+            justifyContent={['flex-start', 'center', 'center', 'center']}>
+              <Heading
+                className='gradient-text'
+                maxWidth='800px'
+                fontFamily='SF-PRO-ROUNDED-HEAVY'
+                fontSize={['50px', '60px', '90px', '100px']}>
+                  COMMUNITY
+              </Heading>
+              <Heading
+                className='gradient-text'
+                maxWidth='800px'
+                fontFamily={'SF-PRO-ROUNDED-HEAVY'}
+                fontSize={['50px', '60px', '90px', '100px']}>
+                  OWNED
+              </Heading>
+              <Heading
+                className='gradient-text'
+                maxWidth='800px'
+                fontFamily={'SF-PRO-ROUNDED-HEAVY'}
+                fontSize={['50px', '60px', '100px', '100px']}>
+                  BANK
+              </Heading>
+          </Box>
+        </Box>
+        
       </Box>
   )
 };
