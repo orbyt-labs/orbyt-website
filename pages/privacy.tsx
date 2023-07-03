@@ -15,7 +15,7 @@ const Privacy: NextPage = () => {
           content="a simple wallet to send and recieve crypto"
         />
       </Head>
-      <Container padding={20} paddingTop={100}>
+      <Container padding={10} paddingTop={100}>
         <Heading>Privacy Policy</Heading>
         <Text>
           This Privacy Policy outlines the practices and policies of Orbyt
