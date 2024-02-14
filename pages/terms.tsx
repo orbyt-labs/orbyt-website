@@ -1,9 +1,10 @@
 import React from 'react';
 import type { NextPage } from 'next';
+import {Container} from '@chakra-ui/react'
 
 const Terms: NextPage = () => {
     return (
-    <>
+    <Container padding={10} paddingTop={100}>
     Terms of Service
     Last updated July 14th, 2021
 
@@ -138,7 +139,7 @@ const Terms: NextPage = () => {
 
     CONTACT US
     In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at support@zora.co
-    </>);
+    </Container>);
 }
 
 export default Terms;
